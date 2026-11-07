@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miedo al fracaso e intención emprendedora | Grupo 1 · Universidad Ecotec</title>
+<meta name="description" content="Esquema visual del informe GEM Ecuador 2024–2025: miedo al fracaso por género e intención de emprender. Grupo 1, Vinculación con la sociedad.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500;700&display=swap">
+<style>
+:root{--azul:#004aad;--azul-osc:#0b2e66;--oro:#d4a02a;--verde:#0f7a6b;--menta:#b8cfa3;--rojo:#c62828;--rosa:#fdeaea;--fondo:#f1f6fc;--tinta:#1d2540}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Quicksand,system-ui,sans-serif;background:var(--fondo);color:var(--tinta);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:1}
+a{color:var(--azul)}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:var(--azul-osc);overflow-x:auto;white-space:nowrap}
+nav .wrap{display:flex;gap:4px;padding:0 12px}
+nav a{color:#fff;text-decoration:none;padding:12px 14px;font-weight:700;font-size:.9rem;border-bottom:3px solid transparent}
+nav a:hover{border-color:var(--oro)}
+header{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-osc) 100%);color:#fff;padding:56px 0 72px;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;right:-90px;top:-90px;width:340px;height:340px;border-radius:50%;background:var(--oro);opacity:.9}
+header::before{content:"";position:absolute;right:140px;bottom:-70px;width:170px;height:170px;border-radius:50%;background:var(--verde)}
+header .wrap{position:relative;z-index:1}
+.uni{font-weight:700;opacity:.85;margin-bottom:26px}
+h1{font-size:clamp(3.2rem,10vw,7rem);max-width:760px}
+h1 span{color:var(--oro)}
+.sub{margin-top:18px;max-width:560px;font-size:1.1rem}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.meta b{background:#fff;color:var(--azul-osc);padding:6px 14px;border-radius:999px;font-size:.9rem}
+section{padding:60px 0 8px}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);color:var(--azul);margin-bottom:6px}
+.lead{max-width:680px;margin-bottom:26px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:#fff;border-radius:18px;padding:22px;border-top:6px solid var(--azul);box-shadow:0 2px 0 rgba(0,74,173,.08)}
+.card.o{border-color:var(--oro)}.card.v{border-color:var(--verde)}.card.r{border-color:var(--rojo)}
+.card h3{font-size:1.7rem;margin-bottom:8px;color:var(--azul-osc)}
+.ico{font-size:2rem;display:block;margin-bottom:6px}
+/* intención */
+.antes-despues{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;background:var(--azul-osc);color:#fff;border-radius:24px;padding:34px 20px}
+.num{font-family:"Bebas Neue",sans-serif;font-size:clamp(4rem,14vw,8rem);line-height:.9;text-align:center}
+.num small{display:block;font-family:Quicksand,sans-serif;font-size:1rem;font-weight:700;opacity:.8}
+.num.b{color:var(--oro)}
+.flecha{font-size:3rem;color:var(--oro)}
+.caida{background:var(--rosa);color:var(--rojo);border-radius:16px;padding:14px 22px;text-align:center;font-weight:700;margin-top:16px}
+.caida strong{font-family:"Bebas Neue",sans-serif;font-size:3rem;font-weight:400;display:block;line-height:1}
+.barra-pair{margin-top:18px;background:#fff;border-radius:18px;padding:22px}
+/* barras */
+.fila{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:center;margin:10px 0}
+.fila .pais{font-weight:700;text-align:right}
+.pista{background:#e6edf6;border-radius:8px;height:26px;position:relative;overflow:hidden}
+.fill{height:100%;border-radius:8px;width:0;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-weight:700;font-size:.85rem;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.m{background:var(--verde)}.h{background:var(--oro);color:var(--tinta)}
+.fila.dos .pista{height:44px}.fila.dos .pista .fill{height:50%;border-radius:0}
+.fila.dos .pista .fill+.fill{border-radius:0}
+.leyenda{display:flex;gap:18px;flex-wrap:wrap;font-weight:700;margin:6px 0 14px}
+.leyenda i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+.nota{font-size:.9rem;opacity:.8;margin-top:12px}
+/* región */
+.pill{display:inline-block;background:#fff;border-radius:999px;padding:5px 16px;margin:4px 4px 0 0;font-weight:700;box-shadow:0 1px 0 rgba(0,0,0,.1)}
+.baja{background:var(--rosa)}.sube{background:#e4f4e8}
+.baja h3{color:var(--rojo)}.sube h3{color:#1b6b34}
+/* flujo */
+.flujo{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
+.flujo .paso{background:#fff;border-radius:18px;padding:20px;border-left:6px solid var(--oro)}
+.flujo .paso:nth-child(3){border-color:var(--rojo)}.flujo .paso:nth-child(5){border-color:var(--verde)}
+.flujo .sig{align-self:center;font-size:2rem;color:var(--azul)}
+.paso h3{font-size:1.5rem;color:var(--azul-osc)}
+@media(max-width:760px){.flujo{grid-template-columns:1fr}.flujo .sig{transform:rotate(90deg);text-align:center}.fila{grid-template-columns:90px 1fr}}
+/* plan */
+.plan{counter-reset:p;display:grid;gap:12px}
+.plan li{list-style:none;background:#fff;border-radius:14px;padding:14px 18px 14px 64px;position:relative}
+.plan li::before{counter-increment:p;content:counter(p);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:var(--azul);color:#fff;font-family:"Bebas Neue",sans-serif;font-size:1.5rem;display:grid;place-items:center}
+.concl{background:var(--azul-osc);color:#fff;border-radius:24px;padding:30px;margin-top:10px}
+.concl h2{color:var(--oro)}
+.concl .grid{margin-top:16px}
+.concl .card{background:rgba(255,255,255,.1);color:#fff;border-color:var(--oro)}
+.cta{display:inline-block;background:var(--oro);color:var(--tinta);font-weight:700;text-decoration:none;padding:12px 24px;border-radius:999px;margin-top:14px}
+footer{margin-top:60px;background:var(--azul-osc);color:#fff;padding:36px 0;font-size:.95rem}
+footer h3{color:var(--oro);font-size:1.8rem;margin-bottom:8px}
+footer a{color:var(--oro)}
+@media(prefers-reduced-motion:reduce){.fill{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Secciones"><div class="wrap">
+<a href="#concepto">Concepto</a><a href="#objetivos">Objetivos</a><a href="#metodologia">Metodología</a><a href="#genero">Por género</a><a href="#intencion">Intención</a><a href="#region">Región</a><a href="#plan">Plan de acción</a><a href="#conclusiones">Conclusiones</a>
+</div></nav>
+
+<header>
+<div class="wrap">
+<p class="uni">Universidad Ecotec · Vinculación con la sociedad</p>
+<h1>Miedo al fracaso e <span>intención emprendedora</span></h1>
+<div class="meta"><b>Grupo #1</b><b>Prof. Oscar Ricardo Bonilla Noboa</b><b>Fecha: 7 de noviembre de 2026</b></div>
+</div>
+</header>
+
+<main class="wrap">
+
+<section id="concepto">
+<h2>¿Por qué importa el miedo al fracaso?</h2>
+<p class="lead">Puede influir en la decisión de emprender. Por eso hay que mirar las diferencias de género, el contexto nacional y las condiciones del entorno empresarial.</p>
+<div class="grid">
+<div class="card o"><span class="ico" aria-hidden="true">😨</span><h3>Miedo al fracaso</h3><p>Es la preocupación por la posibilidad de que un negocio no funcione y cause pérdidas o dificultades.</p></div>
+<div class="card"><span class="ico" aria-hidden="true">💡</span><h3>Intención de emprender</h3><p>Es el porcentaje de personas que piensan iniciar un negocio durante los próximos tres años.</p></div>
+<div class="card v"><span class="ico" aria-hidden="true">🇪🇨</span><h3>Idea principal</h3><p>En Ecuador disminuyó la intención de emprender. El miedo al fracaso muestra una diferencia pequeña entre mujeres y hombres.</p></div>
+</div>
+</section>
+
+<section id="objetivos">
+<h2>Objetivos</h2>
+<div class="grid">
+<div class="card"><h3>Objetivo general</h3><p>Analizar cómo el miedo al fracaso influye en la intención de emprender en Ecuador.</p></div>
+<div class="card o"><h3>Específicos (1)</h3><p>Identificar los factores que generan miedo al fracaso.<br>Comparar las diferencias entre mujeres y hombres.</p></div>
+<div class="card v"><h3>Específicos (2)</h3><p>Contrastar a Ecuador con otros países de la región.<br>Proponer estrategias de apoyo al emprendedor.</p></div>
+</div>
+</section>
+
+<section id="metodologia">
+<h2>Metodología</h2>
+<div class="grid">
+<div class="card"><span class="ico" aria-hidden="true">📊</span><h3>Enfoque</h3><p>Descriptivo y cuantitativo</p></div>
+<div class="card o"><span class="ico" aria-hidden="true">🔎</span><h3>Técnicas</h3><p>Revisión documental y análisis comparativo</p></div>
+<div class="card v"><span class="ico" aria-hidden="true">👥</span><h3>Población</h3><p>Personas de 18 a 64 años</p></div>
+<div class="card r"><span class="ico" aria-hidden="true">⚖️</span><h3>Análisis</h3><p>Comparación por año, género y país</p></div>
+</div>
+</section>
+
+<section id="genero">
+<h2>Miedo al fracaso por género</h2>
+<p class="lead">En casi todos los países comparados, el miedo al fracaso es mayor entre las mujeres. México es la excepción (Espinosa et al., 2025, Figura 6).</p>
+<div class="barra-pair">
+<div class="leyenda"><span><i class="m"></i>Mujeres</span><span><i class="h"></i>Hombres</span></div>
+<div class="fila"><span class="pais">Brasil</span><div class="pista"><div class="fill m" data-w="54.69">54,69 %</div></div></div>
+<div class="fila"><span class="pais">Chile</span><div class="pista"><div class="fill m" data-w="51.97">51,97 %</div></div></div>
+<div class="fila"><span class="pais">Venezuela</span><div class="pista"><div class="fill m" data-w="33.52">33,52 %</div></div></div>
+<div class="fila"><span class="pais">Argentina</span><div class="pista"><div class="fill m" data-w="29.10">29,10 %</div></div></div>
+<div class="fila dos"><span class="pais">Ecuador 🇪🇨</span><div class="pista"><div class="fill m" data-w="40.86">M 40,86 %</div><div class="fill h" data-w="38.91">H 38,91 %</div></div></div>
+<div class="fila dos"><span class="pais">México (excepción)</span><div class="pista"><div class="fill m" data-w="40.33">M 40,33 %</div><div class="fill h" data-w="43.45">H 43,45 %</div></div></div>
+<p class="nota">Brecha entre géneros: la mayor está en Guatemala (≈ 10 puntos porcentuales) y la menor en Argentina (≈ 0,4). En Ecuador es de ≈ 2 puntos. Para Brasil, Chile, Venezuela y Argentina se muestra el dato destacado de mujeres.</p>
+</div>
+</section>
+
+<section id="intencion">
+<h2>Intención de emprender en Ecuador</h2>
+<p class="lead">Personas que piensan iniciar un negocio en los próximos tres años.</p>
+<div class="antes-despues" role="img" aria-label="La intención bajó de 55,79 % en 2023 a 37,73 % en 2024">
+<div class="num"><small>2023</small><span data-count="55.79">55,79</span> %</div>
+<div class="flecha" aria-hidden="true">➜</div>
+<div class="num b"><small>2024</small><span data-count="37.73">37,73</span> %</div>
+</div>
+<div class="caida"><strong>▼ 32 %</strong>de reducción (−18,06 puntos porcentuales)</div>
+<p class="nota" style="margin-top:14px">Parte de la población ecuatoriana enfrenta dificultades en el entorno actual, pero estos datos no demuestran que el miedo al fracaso sea la única causa de la caída.</p>
+</section>
+
+<section id="region">
+<h2>Comparación regional</h2>
+<p class="lead">Intención emprendedora respecto a 2023. Ecuador no es un caso aislado: varios países también registran merma.</p>
+<div class="grid">
+<div class="card r baja"><h3>▼ Disminuye</h3><span class="pill">Venezuela</span><span class="pill">Chile</span><span class="pill">México</span><span class="pill">Guatemala</span><span class="pill">Ecuador</span></div>
+<div class="card v sube"><h3>▲ Aumenta</h3><span class="pill">Brasil</span><span class="pill">Puerto Rico</span></div>
+</div>
+</section>
+
+<section id="relacion">
+<h2>Del riesgo a la decisión</h2>
+<p class="lead">Sentir temor no siempre impide emprender: también puede llevar a prepararse mejor y buscar apoyo (Josty, s. f.).</p>
+<div class="flujo">
+<div class="paso"><h3>1. Percepción del riesgo</h3><p>La persona piensa en los problemas que podrían surgir al abrir un negocio.</p></div><div class="sig" aria-hidden="true">➜</div>
+<div class="paso"><h3>2. Miedo al fracaso</h3><p>La preocupación puede hacer que dude o retrase la decisión.</p></div><div class="sig" aria-hidden="true">➜</div>
+<div class="paso"><h3>3. Decisión de emprender</h3><p>Depende también de la preparación, los recursos y el entorno.</p></div>
+</div>
+</section>
+
+<section id="plan">
+<h2>Plan de acción</h2>
+<ol class="plan" style="padding:0">
+<li><b>Capacitación:</b> talleres gratuitos sobre cómo crear, administrar y mantener un negocio.</li>
+<li><b>Apoyo financiero:</b> acceso a microcréditos y fondos para nuevos emprendedores.</li>
+<li><b>Acompañamiento:</b> programas de mentoría con emprendedores experimentados.</li>
+<li><b>Igualdad de oportunidades:</b> apoyo a mujeres emprendedoras y reducción de las barreras que enfrentan.</li>
+<li><b>Cultura de aprendizaje:</b> promover que los errores son oportunidades para aprender y mejorar.</li>
+</ol>
+<h2 style="margin-top:34px">Resultados esperados</h2>
+<div class="grid">
+<div class="card"><p>Diagnóstico claro del miedo al fracaso en el grupo estudiado.</p></div>
+<div class="card o"><p>Identificación de diferencias por género.</p></div>
+<div class="card v"><p>Propuestas concretas para fortalecer el emprendimiento.</p></div>
+<div class="card r"><p>Mayor conciencia sobre las barreras psicológicas al emprender.</p></div>
+</div>
+</section>
+
+<section id="conclusiones">
+<div class="concl">
+<h2>Conclusiones</h2>
+<div class="grid">
+<div class="card"><p>El miedo al fracaso es un factor relevante, pero no la única causa.</p></div>
+<div class="card"><p>En Ecuador la diferencia por género es pequeña (cerca de 2 puntos).</p></div>
+<div class="card"><p>La intención de emprender cayó cerca de un 32 % respecto a 2023.</p></div>
+<div class="card"><p>Falta investigar cómo influyen juntos los factores psicológicos, económicos y sociales.</p></div>
+</div>
+<a class="cta" href="https://canva.link/ps67ofkxd6eiopi" target="_blank" rel="noopener">Ver las diapositivas en Canva</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<h3>Referencias</h3>
+<p>Eriksson, K., &amp; Strimling, P. (2023). Gender differences in competitiveness and fear of failure help explain why girls have lower life satisfaction than boys in gender equal countries. <i>Frontiers in Psychology, 14</i>, Article 1131837. <a href="https://doi.org/10.3389/fpsyg.2023.1131837">doi.org/10.3389/fpsyg.2023.1131837</a></p><br>
+<p>Espinosa, M. P., Armas, R., Reyes, A., Fernández, M. F., Mahauad, M. D., &amp; Espinoza, D. (2025). <i>Global Entrepreneurship Monitor Ecuador 2024–2025</i>. Global Entrepreneurship Monitor.</p><br>
+<p>Josty, P. (s. f.). Rethinking fear of failure. Global Entrepreneurship Monitor. <a href="https://www.gemconsortium.org/news/rethinking-fear-of-failure">gemconsortium.org</a></p><br>
+<p><b>Integrantes:</b> Pierina Jade Pasiche Jara, Diana Paola Jaramillo Romero, Karolyne Adamaris Cruz Villacis, Solange Juliana Larrea Murillo, Karla Noemi Jurado Zambrano y Mateo Alexander Santacruz Sanchez.</p>
+<p style="margin-top:10px">Página elaborada el 7 de noviembre de 2026 · Universidad Ecotec</p>
+</div>
+</footer>
+
+<script>
+(function(){
+  var fills=document.querySelectorAll('.fill');
+  function go(){fills.forEach(function(f){f.style.width=(parseFloat(f.dataset.w)/60*100)+'%'})}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){go();io.disconnect()}},{threshold:.2});
+    io.observe(document.getElementById('genero'));
+  }else{go()}
+})();
+</script>
+</body>
+</html>
